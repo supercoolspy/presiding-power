@@ -1,0 +1,17 @@
+{
+  "$schema":  "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.2/.schema/devbox.schema.json",
+  "packages": [
+    "rustup@latest",
+    "clippy@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "rustup default stable && nix-shell"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
